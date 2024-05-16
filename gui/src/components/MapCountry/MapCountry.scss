@@ -1,0 +1,33 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.map-country {
+  stroke-width: 0.6;
+  stroke-opacity: 0.8;
+  fill-opacity: 0.7;
+
+  &:hover,
+  &.is-hovered {
+    fill: $blue--dull-dark;
+    cursor: pointer;
+    fill-opacity: 0.6;
+  }
+
+  &.is-selected {
+    fill: $blue--dark;
+    fill-opacity: 1;
+    stroke-opacity: 0.5;
+    stroke-width: 1;
+    stroke: $white;
+  }
+
+  &__name {
+    fill: $black;
+    &.is-selected {
+      fill: $white;
+    }
+    &:hover,
+    &.is-hovered {
+      cursor: pointer;
+    }
+  }
+}

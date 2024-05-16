@@ -1,0 +1,22 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.sum-output {
+  &__total,
+  &__high-tot,
+  &__low-tot {
+    color: $white;
+    font-weight: bold;
+    padding: $padding--tiniest;
+  }
+  &__total {
+    background-color: $blue--dark;
+    line-height: 1.8em;
+  }
+  &__high-tot {
+    background-color: $red--dark;
+  }
+  &__low-tot {
+    color: $grey--dull-dark;
+    background-color: $grey--very-light;
+  }
+}

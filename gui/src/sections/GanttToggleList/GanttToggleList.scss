@@ -1,0 +1,17 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.gantt-toggle-list {
+  flex-wrap: wrap;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    @media (max-width: $media-switch--small) {
+      padding-top: $spacing--narrow;
+    }
+  }
+}

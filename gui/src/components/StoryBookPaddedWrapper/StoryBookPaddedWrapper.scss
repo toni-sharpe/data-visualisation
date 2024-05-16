@@ -1,0 +1,35 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.story-book-padded-wrapper {
+  @include column-layout();
+  & > * {
+    @include space-column--wide-add-border();
+  }
+  box-sizing: border-box;
+  position: relative;
+
+  &__heading {
+    display: inline-block;
+    font-size: $font-size--medium-large;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__main {
+    align-self: flex-start;
+    box-shadow: 0 0 20px 0 $grey--light;
+    box-sizing: border-box;
+    height: auto;
+    position: relative;
+
+    &.story-book-padded-wrapper__main {
+      & > *,
+      & > ul > * { // common wrappers will be skipped like this
+        position: relative; // over-ride absolute set on immediate parents - works for
+                            // components primarily, use the height setting for screens as the
+                            // absolute might be deeper and we don't want to blindly set all
+                            // to relative
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.histogram-bar-list-label {
+  @include column-layout();
+  align-items: center;
+  background-color: $grey--lightest;
+  box-sizing: border-box;
+  font-size: $font-size--medium-small;
+  display: flex;
+  justify-content: center;
+  line-height: $line-height--large;
+  min-height: 60px;
+  padding: $padding--small-tiny;
+  position: absolute;
+  text-align: center;
+  z-index: $z-index--step-right-back;
+
+  @media (min-width: $media-switch--medium) {
+    font-size: $font-size--medium;
+  }
+}

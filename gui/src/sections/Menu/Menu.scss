@@ -1,0 +1,13 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.menu {
+  @include row-layout();
+  list-style: none;
+
+  @media (max-width: $media-switch--large) {
+    @include column-layout();
+    & > * {
+      @include space-column();
+    }
+  }
+}
