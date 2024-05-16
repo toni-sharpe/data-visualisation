@@ -1,0 +1,9 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.quantile-list-number {
+  background-color: $grey--dull-dark;
+  color: $white;
+  font-size: $font-size--small;
+  padding: 0 $padding--small-tiny;
+  position: absolute;
+}

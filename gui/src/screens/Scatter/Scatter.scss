@@ -1,0 +1,15 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.scatter {
+  &__chart-wrapper {
+    max-width: 70vw;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $media-switch--large) {
+      max-width: 100vw;
+      width: 100vw;
+    }
+  }
+}

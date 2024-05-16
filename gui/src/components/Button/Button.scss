@@ -1,0 +1,42 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+button {
+  background-color: $grey--very-light;
+  border: none;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover,
+button.is-hovered {
+  background-color: $blue-green--light;
+  cursor: pointer;
+}
+
+button:focus {
+  background-color: $blue--light;
+}
+
+button.is-disabled {
+  background-color: $grey--light;
+  color: $grey--lightest;
+}
+button.button--medium {
+  padding: $padding--medium;
+}
+button.is-selected {
+  background-color: $grey--dark;
+  color: $white;
+}
+button.is-selected--secondary {
+  background-color:$blue--dark;
+  color: $white;
+}
+button.button--small {
+  padding: $padding--small;
+}
+button.button--small-tiny {
+  padding: $padding--small-tiny;
+}

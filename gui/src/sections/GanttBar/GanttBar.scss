@@ -1,0 +1,68 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.gantt-bar {
+  height: $gantt-bar-height;
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+
+  &__label-main {
+    background-color: rgba($green--dark, 0.15);
+    white-space: nowrap;
+    position: absolute;
+    z-index: $z-index--step-right-forward;
+    right: 2px;
+    padding: 1px 6px 2px;
+    text-align: left;
+    top: -27px;
+  }
+
+  &__label {
+    white-space: nowrap;
+    position: absolute;
+    z-index: $z-index--step-right-forward;
+    &--bar-number {
+      font-size: $font-size--medium-small;
+    }
+    &--mean {
+      left: 5px;
+      top: 15px;
+    }
+    &--range {
+      bottom: 1px;
+    }
+    &--stddev {
+      top: 1px;
+    }
+  }
+
+  &__label-text {
+    padding-right: $padding--small-tiny;
+    padding-left: $padding--small-tiny;
+  }
+  &__mark {
+    width: 2px;
+  }
+  &__range {
+    opacity: 0.3;
+  }
+  &--good { background-color: $green; }
+  &--notGood { background-color: #da7; }
+  &--bad { background-color: $red--dark; }
+  &--veryBad { background-color: $grey--dull-dark; }
+  &--neutral { background-color: $blue; }
+  &--good-dark { background-color: $green--dark; }
+  &--notGood-dark { background-color: #a81; }
+  &--bad-dark { background-color: $red--black; }
+  &--veryBad-dark { background-color: $grey--black; }
+  &--neutral-dark { background-color: $blue--dark; }
+
+  .gantt-bar-label {
+    background-color: rgba(255,255,255,0.6);
+  }
+  &:hover {
+    .gantt-bar-label {
+      background-color: rgba(255,255,255,0.9);
+    }
+  }
+}

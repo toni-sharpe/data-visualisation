@@ -1,0 +1,11 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.story-book-example-block {
+  background-color: $grey--lightest;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 250px;
+  height: 170px;
+  padding: 20px;
+}

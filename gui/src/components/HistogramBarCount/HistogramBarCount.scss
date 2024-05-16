@@ -1,0 +1,23 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.histogram-bar-count {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  background-color: $black;
+  bottom: 0;
+  color: $white;
+  display: none;
+  max-width: 100%;
+  opacity: 0.7;
+  padding: $padding--small-tiny $padding--small;
+  position: absolute;
+  text-align: center;
+
+  &__font-size-small {
+    font-size: $font-size--small;
+    opacity: 0.85;
+  }
+}

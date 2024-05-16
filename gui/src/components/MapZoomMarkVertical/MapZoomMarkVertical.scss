@@ -1,0 +1,43 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.map-zoom-mark-vertical {
+  &__left,
+  &__right {
+    background-color: $green--dark;
+    position: relative;
+  }
+
+  &__right {
+    z-index: 1;
+    width: 5px;
+    border-left: 1px solid $black;
+    border-radius: 0 5px 5px 0;
+    left: -1px;
+  }
+
+  &__left {
+    z-index: 1;
+    width: 5px;
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid $black;
+    right: -1px;
+  }
+
+  &__top-line,
+  &__bottom-line {
+    background-color: $blue-green--medium;
+    height: 1px;
+    left: 4px;
+    position: absolute;
+    width: 94vw;
+    z-index: $z-index--step-forward;
+  }
+
+  &__top-line {
+    top: 0;
+  }
+
+  &__bottom-line {
+    bottom: 0;
+  }
+}

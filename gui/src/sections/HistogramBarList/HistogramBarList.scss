@@ -1,0 +1,24 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.histogram-bar-list {
+  cursor: pointer;
+  position: absolute;
+  z-index: $z-index--step-right-forward;
+  &:focus {
+    .histogram-bar-count,
+    .histogram-bar-label {
+      display: flex;
+      z-index: $z-index--front-guaranteed;
+    }
+  }
+  &:hover {
+    .histogram-bar-list-label {
+      background-color: $blue--light;
+    }
+    .histogram-bar-count,
+    .histogram-bar-label {
+      display: flex;
+      z-index: $z-index--front-guaranteed;
+    }
+  }
+}

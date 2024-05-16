@@ -1,0 +1,57 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.drag-graph {
+  border: 1px solid $grey--black;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  &__heading {
+    box-shadow: none;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+  }
+  &__scale-detail {
+    &.drag-graph__scale-detail {
+      border-bottom: 1px solid $grey--black;
+      margin-bottom: 0;
+      padding-bottom: $spacing--narrow;
+      text-align: center;
+    }
+  }
+  &__controls {
+    justify-content: center;
+  }
+  &__zoom {
+    align-items: center;
+  }
+
+  &.is-on-map {
+    border: 0.5px solid $grey--light;
+    justify-content: center;
+    padding-top: 14px;
+
+    .drag-graph__header {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .drag-graph__figure {
+      & > * {
+        @include space-column--narrowest();
+      }
+    }
+
+    .drag-graph__controls {
+    font-size: $font-size--tiniest;
+      justify-content: flex-start;
+      padding-left: $spacing--narrow;
+    }
+
+    .drag-graph__scale-detail {
+    font-size: $font-size--tiniest;
+      &.drag-graph__scale-detail {
+        border-bottom: 0.5px solid $grey--light;
+      }
+    }
+  }
+}

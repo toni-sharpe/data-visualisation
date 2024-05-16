@@ -1,0 +1,84 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.month-block {
+  display: inline-block;
+  margin: 0 2px;
+  padding-bottom: 7.8%;
+  position: relative;
+  width: 7.8%;
+
+  @media (max-width: $media-switch--medium) {
+    padding-bottom: 15.8%;
+    width: 15.8%;
+  }
+
+  &--event-free {
+    background-color: $grey--white;
+  }
+
+  &--future {
+    background-color: $white;
+    box-shadow: inset 0 0 0 3px $grey--lightest;
+  }
+
+  &--light {
+    background-color: $red--very-light;
+  }
+
+  &--medium {
+    background-color: $red--very-light;
+    box-shadow: inset 0 0 0 2px $red--light;
+  }
+
+  &--heavy {
+    background-color: $red--dulled-light;
+    box-shadow: inset 0 0 0 4px $red--dulled-light;
+  }
+
+  &--very-heavy {
+    background-color: $red--dulled-light;
+    box-shadow: inset 0 0 0 6px $red--medium;
+  }
+
+  &--exceptional {
+    background-color:  $red--medium;
+    box-shadow: inset 0 0 0 8px $red--dark;
+  }
+
+  &--frightening {
+    background-color: $red--medium;
+    box-shadow: inset 0 0 0 10px $red--black;
+  }
+
+  &--this-month {
+    background-color: $blue--light;
+    box-shadow: inset 0 0 0 3px $blue--dark;
+  }
+
+  &__content {
+    color: $black;
+    font-size: $font-size--small;
+    left: $padding--small-tiny;
+    overflow-wrap: anywhere;
+    padding: $padding--small-tiny;
+    position: absolute;
+    right: $padding--small-tiny;
+    top: $padding--small-tiny;
+    top: $padding--small-tiny;
+  }
+
+  &__text {
+    background-color: $white;
+    color: $black;
+  }
+
+  &__year {
+    align-self: flex-start;
+    background-color: $grey--dark;
+    color: $white;
+    font-size: $font-size--medium;
+    font-weight: $font-weight--regular;
+    margin-bottom: $spacing--narrowest;
+    padding: $padding--tiniest $padding--small-tiny;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.scatter-chart {
+  box-sizing: border-box;
+  flex: 1;
+  padding: $padding--very-large;
+  width: 100%;
+  max-width: 90vh;
+  max-height: 90vh;
+  &__number {
+    fill: $black;
+    fill-opacity: 1;
+    font-size: $font-size--medium-small;
+    text-align: right;
+  }
+  &__y-label {
+    transform: rotate(-90deg);
+  }
+  &__outcome-severe {
+    fill: $green--dark;
+    stroke: $green--dark;
+  }
+  &__outcome-not-severe {
+    fill: $blue--dark;
+    stroke: $blue--dark;
+  }
+}
