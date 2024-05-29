@@ -42,12 +42,12 @@ function GanttBar({
   const markClassDark = `${markClassPrefix} ${tone ? `gantt-bar--${tone}-dark` : '' }`
 
   const hueStyle = maxOfAll && !tone
-    ? ({ lightness = 60 } = {}) => {
+    ? function ({ lightness = 60 } = {}) {
       return {
         backgroundColor: `hsl(${270 - (270 / maxOfAll * 1.1 * max)} 80% ${lightness}%)`
       }
     }
-    : (args = {}) => ({})
+    : function (args = {}) {}
 
   const labelListPosition = maxMda > max ? maxMda : max
 
