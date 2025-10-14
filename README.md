@@ -12,13 +12,19 @@ More details on the purpose can be read [on the homepage of the site here](https
 
 The Scatter graph allows for any two variables from the data to be plotted on the X and Y axes to discover possible correlations.
 
+<img width="1523" height="865" alt="image" src="https://github.com/user-attachments/assets/f2af1727-f4df-4af2-8906-965d0b36df37" />
+
 ### Timeline
 
 Breaks down events month by month to see which months are the most serious for several values (those which are [aggregated using these functions from the database code](https://github.com/toni-sharpe/sql-plsql-example?tab=readme-ov-file#functions))
 
+<img width="1674" height="712" alt="image" src="https://github.com/user-attachments/assets/93dce7b9-8d18-42c2-bb6d-dd36a76e4667" />
+
 ### Interactive Gannt
 
 Sets one element of the event, on the `y` axis over time, on the `x` axis, with the `x` axis time values displayed as bar, marked based on selectable statistical options (such as range, deviation and quantiles), grouped by a different element, on a false `z` across, broken down into groups of values. Interactive mode allows the statistical breakdown element on `y` and element defined as sub-sets on `z` to be changed.
+
+<img width="1648" height="824" alt="Screenshot 2025-10-14 at 22 41 36" src="https://github.com/user-attachments/assets/4b9da42a-47ac-4364-b0a8-90ed01c65d21" />
 
 ### Interactive histogram
 
