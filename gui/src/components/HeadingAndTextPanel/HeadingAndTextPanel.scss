@@ -1,0 +1,18 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.heading-and-text-panel {
+  font-size: $font-size--large;
+  line-height: $line-height--large;
+  max-width: 800px;
+
+  h2,
+  h3 {
+      box-shadow: none;
+  }
+
+  h3 {
+    color: $blue--dark;
+    font-size: $font-size--large;
+    font-weight: $font-weight--bold;
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.gantt-scale {
+  background-color: $green--dark;
+  height: 2px;
+  position: relative;
+  top: $spacing--narrow;
+  width: 100%;
+  &__line,
+  &__sub-line {
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    z-index: $z-index--step-right-back;
+  }
+  &__line {
+    background-color: $green--dark;
+  }
+  &__sub-line {
+    background-color: $blue--light;
+  }
+  &__label,
+  &__sub-label {
+    font-size: $font-size--medium-large;
+    font-weight: bold;
+    padding: $padding--small-tiny;
+    position: absolute;
+    top: 2px;
+  }
+  &__label {
+    background-color: $green--dark;
+    color: $white;
+  }
+  &__sub-label {
+    background-color: $blue--light;
+  }
+}

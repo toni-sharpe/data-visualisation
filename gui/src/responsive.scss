@@ -1,0 +1,61 @@
+@import './util/Constant/sass-variable-list.scss';
+
+
+.app-wrapper {
+  margin: var(--padding--medium) var(--padding--medium) 20px;
+  @media (max-width: $media-switch--medium) {
+    margin: var(--padding--small-tiny) var(--padding--small-tiny) 20px;
+  }
+}
+
+
+.row-layout {
+  @include row-layout();
+}
+.column-layout {
+  @include column-layout();
+}
+
+
+.space-children {
+  & > * {
+    @include space-row()
+  }
+  &--with-border > * {
+    @include space-row-add-border()
+  }
+  &--wide > * {
+    @include space-row--wide()
+  }
+  &--wide-with-border > * {
+    @include space-row--wide-add-border()
+  }
+  &--narrowest > * {
+    @include space-row--narrowest()
+  }
+}
+
+
+.space-children--column {
+  & > * {
+    @include space-column()
+  }
+  &-with-border > * {
+    @include space-column-add-border()
+  }
+  &--wide > * {
+    @include space-column--wide()
+  }
+  &--very-wide > * {
+    @include space-column--very-wide()
+  }
+}
+
+.space-children--wide-column {
+  & > * {
+    @include space-column--wide()
+  }
+  &-with-border > * {
+    @include space-column--wide-add-border()
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.world-map {
+  display: flex;
+  justify-content: center;
+  height: 79vh;
+  max-width: 100%;
+
+  &__wrapper {
+    .page-detail-wrapper__header {
+      margin-bottom: 1px;
+    }
+  }
+}
+
+// Time to go back in time ......
+// Got to MS some credit here, they had their issues in 2008. This is 2024.
+/* Safari 10.1 but not 17.1+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+  .map-svg, .world-map {
+    width: 154vh;  // Safari needs this see #544
+  }
+}}
+
+/* Safari 17.1+ */
+_::-webkit-full-page-media, _:future, :root .map-svg, .world-map {
+    width: 154vh; // Safari needs this see #544
+}

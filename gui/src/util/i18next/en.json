@@ -1,0 +1,473 @@
+{
+  "CommonClinicalResponses": {
+    "cel": "CE level",
+    "ct_1": "CT 1",
+    "condr": "Consultant Dr.",
+    "sr_1": "SR 1",
+    "sr_2": "SR 2",
+    "ev_count": "Ev Count",
+    "ss_1": "SS 1",
+    "ss_2": "SS 2",
+    "first_ps": "1 PS",
+    "is_dur": "IS dur",
+    "is_start": "IS",
+    "ms_1": "MS 1",
+    "ms_1_2": "MS 1 second time",
+    "ms_1_dur": "MS 1 dur",
+    "ms_2": "MS 2",
+    "ms_2_dur": "MS 2 dur",
+    "op_rating": "OP Rating",
+    "pathgen_dur": "PathGen dur",
+    "pt_ev_dur": "PT ev dur",
+    "path_sev": "Path sev",
+    "ps_1": "PS 1",
+    "ps_1_dur": "PS 1 dur",
+    "ps_2": "PS 2",
+    "ps_2_dur": "PS 2 dur",
+    "ps_3": "PS 3",
+    "ps_3_dur": "PS 3 dur",
+    "ps_dur": "PS dur",
+    "ps_level": "PS severity",
+    "ps_prop": "PS prop",
+    "recovery_dur": "Recovery dur",
+    "recovery_prop": "Recovery prop",
+    "slight_sr_1": "SR 1 (pos)",
+    "slight_sr_2": "SR 2 (pos)",
+    "src_hm": "Src",
+    "ag_tim": "AGTim"
+  },
+
+  "MainPageHeading": {
+    "": "Purpose",
+    "Scatter": "Scatter Plot",
+    "Gantt": "Gantt",
+    "TimeLine": "Time Line",
+    "HistogramMaker": "Histogram",
+    "SVG": "SVG",
+    "WorldMap": "World Map",
+    "nIs": "N is {{n}}"
+  },
+
+  "Header": {
+    "close": "Close menu",
+    "open": "Open",
+    "openMenu": "Open menu"
+  },
+
+  "KeyHintToggle": {
+    "keyHint": "Key zones | push 'k'"
+  },
+
+  "Menu": {
+    "ariaLabel": "Main menu"
+  },
+
+  "LanguageToggle": {
+    "languageToggle": "Switch language to",
+    "de": "DE",
+    "en": "EN"
+  },
+
+  "Button": {
+    "isDisabled": " is currently disabled{{selectedExtra}}",
+    "isDisabledSelected": " because currently selected",
+    "primary": ""
+  },
+
+  "FilterButtonLabel": {
+    "severe": "SV",
+    "fjp": "Prev",
+    "heo": "HE",
+    "rmDubious": "Rm Dub.",
+    "nonSevere": "NS"
+  },
+
+  "Home": {
+    "backgroundPanelLabel": "Background",
+    "summaryPanelLabel": "Page Summary",
+    "techStackPanelLabel": "Tech Stack"
+  },
+
+  "Background": {
+    "heading1": "Introduction",
+    "paragraph1": "This project grew out of previous work volunteering to help with some medical research, well prior to peer review, by taking the data and providing tools that could be used by the researcher to help build the case for or against the hypothesis. The spreadsheet provided became an SQL Database table and from there a front-end was built to provide specific visual descriptions of the data gathered, dictated by the direction of research; however, it became apparent that I could also use it beyond that to explore and improve several critical skills. Now completely separated from it's roots, this continues as a play area for me to explore ideas in the tech spaces I'd like to.",
+    "paragraph7": "Note: For ethical reasons the graphs involving medical data use deliberately generic terms.",
+
+    "heading2": "Accessibility",
+    "paragraph2": "I've been using the term \"accessibility as a first-class concern\" and for me this means that it is built into everything that's done on a website. It isn't necessary for a ticket to specifically mention it anymore than the need for JavaScript would be mentioned on a ticket in a React project. It's necessary by design because this is a website. The idea of \"first-class concern\" also elevates it above a group of secondary concerns, such as React: my site does not need React, it's just a very useful tool; it could be gone this time next year but it's critical the accessibility is not. This manifests itself across the whole project in a host of different ways, from understanding HTML deeply to the presence of it's own permanent column in the GitHub project.",
+
+    "heading3": "Performance",
+    "paragraph3": "Performance underpins accessibility. Overcomplication, excessive package use, poor CSS solutions, bloat, unnecessary abstractions, etc. etc. the list is significant, all create a web full of sites that restrict the capability of all but those on the best technical infrastructure and/or with the highest performance devices. As of writing, my production CSS file is 5.3kb; the last commercial site I worked on had over 1mb of CSS in the JS; and, I've yet to look at how to improve that delivery (for example by inlining critical CSS or using SASS mixins or includes appropriately based on the output). Ideally the 4 or 5 billion internet users worldwide can view my site with ease, not just the 1 billion or so in the most privileged positions.",
+
+    "heading4": "Developer experience (DX)",
+    "paragraph4": "I first started to consider the symmetry of the relationship of user to product (UX) and that of developer to product architecture and mechanics (DX) in 2012/2013 and since then have been slowly considering and iterating on this. Terms like cognitive load, context switching, ease of re-use, understandablity, readability, consistency and empathy amongst others have featured in retros, planning and PR review, as well as in my own code, since. Further to that, as accessibility branches off UX, the idea of developer accessibility branches off DX and I am incorporating that into the overall idea of DX. This project gives me the room jump into the deep end unhindered with ideas I have in this area. Note that I don't currently consider all of those to be successful, nor have I necessarily impacted positively on past projects as a result, though I have tried to notice and incorporate avoiding those problems in subsequent iterations.",
+
+    "heading5": "Why continue with data visualisation?",
+    "paragraph5": "Data visualisation provides a single problem that is challenging from the perspective of all of the above. In order for this to really work I've decided on an idea of complexity that serves to provide an outline allowing the level of those challenges to be pushed to the limit: data of varied structural complexity but always presented using at least two methods, a visual one and a non-visual one, where both data and presentation can have complex depth and the upper limits to any complexity are fuzzy. Complexity is also paired with flexibility which falls in a similar outline. Note that \"non-visual\" means that the presentation is understandable without vision, not necessarily that a second, non-visual presentation can be viewed visually.",
+
+    "heading6": "A few other notes",
+    "paragraph6": "Fundamentally I'm using the three main languages of the browser: JS, CSS and HTML. I am purposefully not using any data visualisation packages like D3 or VictoryChart. I'm referring often to the MDN docs provided by Mozilla Foundation, an exceptional organisation. The front-end is mostly responsive, again, data visualisation is challenging in this perspective too."
+  },
+
+  "TechStack": {
+    "paragraph6": "I'm using this page to list not just the tools and techniques but also some of the things related to accessibility, developer experience and performance. Listed alphabetically and not to be considered complete given the fluid nature of the main concerns and technologies. The list is quite fine-grained and detailed and ranges from some of the most well known things in web tech to my own ideas that might even be novel.",
+
+    "techStack__1__Label": "Aria",
+    "techStack__1": " - enable non-visual communication via HTML attribute. Good tag selection negates the need in many cases.",
+    "techStack__2__Label": "Axe and A11y",
+    "techStack__2": " - extensions and rule-sets attached to React Testing Library and Story Book that enhance the automated assessment of accessibility.",
+    "techStack__3__Label": "BEM",
+    "techStack__3": " - a naming convention that uses __ and -- to aid readability in the code-base, originally from CSS but improves DX elsewhere too.",
+    "techStack__4__Label": "Code-base consistency",
+    "techStack__4": " - lowering the cognitive load of context switching by ensuring that if it's the same it appears the same, driven by pattern recognition ideas.",
+    "techStack__5__Label": "Composable components",
+    "techStack__5": " - built to be re-used and shared. I was doing this before React as it happens, just server-side with PHP.",
+    "techStack__6__Label": "CSS",
+    "techStack__6": " - the key to making layouts responsive, responsible for everything between screen and eyes, something I've been using since V2.",
+    "techStack__7__Label": "Flex-box model",
+    "techStack__7": " - very well designed layout system for web-pages, I have been using this successfully for years and know it very well.",
+    "techStack__8__Label": "HTML",
+    "techStack__8": " - no \"div soup\" - HTML needs to be deeply explored to maximise the available accessibility and other features it provides.",
+    "techStack__9__Label": "I18next",
+    "techStack__9": " - tool used to handle translations.",
+    "techStack__10__Label": "JS",
+    "techStack__10": " - no introduction needed as the core tool making the web move. I've been with this since well before the 2015 revolution.",
+    "techStack__11__Label": "Lighthouse",
+    "techStack__11": " - built into Chrome and used to assess various accessibility and performance metrics on desktop or mobile. Aiming for 100s across the board.",
+    "techStack__12__Label": "No plural \"s\"",
+    "techStack__12": " - a developer accessibility idea: English shouldn't be required to understand code, and it also improves the code search experience: think \"activity\" and \"activities\".",
+    "techStack__13__Label": "PropTypes",
+    "techStack__13": " - chosen over TypeScript. Things are in the balance here, as TS would enable the removal of a lot of JS tied up in PropTypes, but applying TS is a large task at this stage.",
+    "techStack__14__Label": "Ramda",
+    "techStack__14": " - a really useful set of data manipulation functions.",
+    "techStack__15__Label": "ReactJS",
+    "techStack__15": " - frame-work that facilitates the componentisation of front-ends and the management of state.",
+    "techStack__16__Label": "React Testing Library",
+    "techStack__16": " - used to cover utils and more complex components but isolated from the server.",
+    "techStack__17__Label": "Role and region",
+    "techStack__17": " - two HTML attributes that work like meta-data for non-visual tools. Often the right tag selection will bring an appropriate value.",
+    "techStack__18__Label": "Sass",
+    "techStack__18": " - a superset of CSS that brings programming functionality and syntactic sugar but compiles down to served CSS.",
+    "techStack__19__Label": "Storybook",
+    "techStack__19": " - used as the primary visual testing and validation tool.",
+    "techStack__20__Label": "SVG",
+    "techStack__20": " - co-ordinate based drawing interface widely supported, fast, open, highly detailed and interactive.",
+    "techStack__21__Label": "Translated",
+    "techStack__21": " - accessible sites are translated as part of development, and/or translatable by 3rd party tools. The site has been built from day one as translatable, using i18n techniques for direct translation and by not blocking 3rd party browser extensions. German from DeepL.",
+    "techStack__22__Label": "Utility abstraction",
+    "techStack__22": " - taking significant amounts of logic from the components and using shareable util files improving testability and allowing files to be more succinct and easier to digest.",
+    "techStack__23__Label": "Utility organisation",
+    "techStack__23": " - logical breakdown of utils into sensibly sized files with their tests.",
+    "techStack__24__Label": "UX",
+    "techStack__24": " - well I would love some actual users, typically I would be working closely with them."
+  },
+
+  "PageSummary": {
+    "heading1": "Scatter Plot",
+    "link1": "/Scatter",
+    "paragraph1": "Plots X against Y. Both axes can be selected by the user.",
+    "heading4": "Time Line",
+    "link4": "/TimeLine",
+    "paragraph5": "Aggregated totals grouped by time-block, currently just doing months.",
+    "heading5": "Gantt",
+    "link5": "/Gantt",
+    "paragraph6": "Calculates statistics data from aggregated points from the entries in the data set and displays them against time, Gantt style. Also allows the user to choose single points which are then grouped to provide the aggregations, ie. user selects point X, which produces two groups 0-10 and 11-20, each with N entries, then statistics data is derived and displayed.",
+    "heading6": "Histogram",
+    "link6": "/HistogramMaker",
+    "paragraph7": "Allows the user to select a data-point to group by (X-axis) then N other data-points to arrange in those groups (Y-axis) and a selection of statistical views to chosen from to build the columns (such as range, max, or count).",
+    "heading7": "SVG",
+    "link7": "/SVG",
+    "paragraph8": "Drag and block graphs serve to show the breakdown of individual data-points with aggregated data available for each point. WIP.",
+    "heading8": "World Map",
+    "link8": "/WorldMap",
+    "paragraph9": "A world map for comparing values across countries and time. WIP."
+  },
+
+  "Scatter": {
+    "description": "Interactive scatter diagram set to hypothesis as default",
+    "interactiveChart": "Interactive chart"
+  },
+
+  "ScatterChart": {
+    "notEnoughData": "Not enough data to display a chart"
+  },
+
+  "HypothesisScatterChart": {
+    "hypothesisCorrelationDescription": "Represents the correlation described in the document",
+    "hypothesisChart": "Hypothesis chart"
+  },
+
+  "AxisSelector": {
+    "axisGROUPBY": "Groupings",
+    "axisSTATS": "Bars",
+    "axisX": "X Axis",
+    "axisY": "Y Axis",
+    "close": "Close",
+    "open": "Open",
+    "primaryMark": "this selection for the axis conveys the primary information",
+    "shownOnGROUPBY": "shown on group by axis",
+    "shownOnSTATS": "shown on stats axis",
+    "shownOnX": "shown on X axis",
+    "shownOnY": "shown on Y axis"
+  },
+
+  "ScatterStatisticOutput": {
+    "label": "List of statistics based on scatter output",
+    "notEnoughData": "Not enough data to perform statistic operations",
+    "sampleCorrelation": "Sample correlation",
+    "sampleCovariance": "Sample covariance"
+  },
+
+  "GanttScale": {
+    "scaleFor": "Scale for {{ariaLabel}}"
+  },
+
+  "HistogramBarListLabel": {
+    "sb-example": "Storybook Example",
+    "aria-label": "{{groupBy}} values {{histogramBarListLabel}} with bars for {{barList}}",
+    "0-10": "..10",
+    "10-20": "..20",
+    "20-30": "..30",
+    "30-40": "..40",
+    "40-50": "..50"
+  },
+
+  "HistogramBarLabel": {
+    "sb-3": "{{displayVal}} cases in {{ariaLabel}}"
+  },
+
+  "FactorToggle": {
+    "ariaLabel": "Factor toggle button: currently {{state}} click to toggle to {{altState}}",
+    "on": "Factor is on",
+    "off": "Factor is off",
+    "turnOn": "Turn on",
+    "turnOff": "Turn off"
+  },
+
+  "OutcomeSummmary": {
+    "total": "Total",
+    "severe": "Severe",
+    "nonSevere": "Non Severe",
+    "outcomeSummary": "Outcome column summary",
+    "unknown": "Unknown"
+  },
+
+  "PredictiveHistogramListCounter": {
+    "counterLabel": "Increase data as added"
+  },
+
+  "Gantt": {
+    "subHeading": "Basic timing statistics, across common responses and with interactive cross referencing",
+    "interactivePanelLabel": "Interactive Gantt",
+    "pathogenesisPanelLabel": "PathGen Gantt",
+    "ariaLabel": "{{label}}; range {{range}} with mean {{mean}} Standard deviation {{stddev}}",
+    "secondaryNav": "See response time statistics or interactive where you can choose what to group and see time statistics about"
+  },
+
+  "GeneralResponseGantt": {
+    "GraphHeading": "Filterable ranges and basic statistics for both severe and non-severe responses"
+  },
+
+  "InteractiveGantt": {
+    "GraphHeading": "Interactive stat list allowing the user to choose what is grouped and see the timing stats for those groups",
+    "group": "{{k}} (N={{count}})"
+  },
+
+  "GanttBar": {
+    "good": "Recovery responses",
+    "notGood": "Mid responses",
+    "bad": "Serious responses",
+    "veryBad": "Significant serious responses",
+    "neutral": "Impact without bearing"
+  },
+
+  "GanttBarList": {
+    "ariaLabel": "{{valueList}}",
+    "mAndM": "Mean | Medn",
+    "mda": "Median absolute dev.",
+    "mean": "Mean",
+    "median": "Md",
+    "quantile": "Qu (10ths)",
+    "range": "Range",
+    "ranges": "lo | MDA | hi",
+    "skewness": "Skew",
+    "stddev": "MdA dev"
+  },
+
+  "GanttToggleList": {
+    "mean": "Mean",
+    "range": "Range",
+    "min": "Min",
+    "max": "Max",
+    "median": "Median",
+    "quantile": "Quantile",
+    "quantileNumber": "Qu' Numbers",
+    "deviation": "MDA",
+    "label": "Label",
+    "statList": "Stats",
+    "fatLines": "Fat lines"
+  },
+
+  "TimeLine": {
+    "op_ratingPanelLabel": "Rating",
+    "path_sevPanelLabel": "Severity",
+    "celPanelLabel": "CLE",
+    "secondaryNavSumAndFilterList": "A set of options for the months"
+  },
+
+  "HistogramMaker": {
+    "countPanelLabel": "Count",
+    "avePanelLabel": "Median",
+    "mdaPanelLabel": "Deviation",
+    "minPanelLabel": "Min",
+    "maxPanelLabel": "Max",
+    "rangePanelLabel": "Range"
+  },
+
+  "SVG": {
+    "comingSoon": "This page is coming soon ..."
+  },
+
+  "DragGraph": {
+    "includeExtreme": "Toggle the largest value in the set as that can skew the graph",
+    "scaleDetail": "Highlights are at {{highlight}} and steps are {{scaleUnit}}"
+  },
+
+  "DragGraphButton": {
+    "aveSeverityShown": "Sev.",
+    "incExtreme": "+",
+    "map": "M",
+    "outcomeShown": "Outcome",
+    "sbZoom": "SB Zoom"
+  },
+
+  "GraphSet": {
+    "ce_1": "CE1",
+    "ce_4": "CE4",
+    "ct_1": "Ph1",
+    "ct_2": "CT2",
+    "ct_3": "CT3",
+    "condr": "CD",
+    "etiology": "ET",
+    "ev_count": "Order",
+    "outcome_type": "OT",
+    "ps_level": "PSS",
+    "src_hm": "S",
+    "poc": "PoC",
+    "outlier": "OutT",
+    "boolean_set": "Bs",
+    "testing": "This is a test key"
+  },
+
+  "ResetGraphButton": {
+    "resetGraphCenter": "."
+  },
+
+  "ZoomButton": {
+    "0.2": "0.2",
+    "0.5": "0.5",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "12": "12",
+    "14": "14",
+    "15": "15",
+    "16": "16",
+    "18": "18",
+    "20": "20",
+    "25": "25",
+    "30": "30",
+    "40": "40",
+    "50": "50"
+  },
+
+  "WorldMap": {
+    "blankPanelLabel": "Blank",
+    "centuryPlusPerfTestPanelLabel": "124y perf test",
+    "graphDataPanelLabel": "Graphs - click Afr/S.A.",
+    "internetUsePanelLabel": "WB Internet Use",
+    "secondaryNav": "Switch the map data"
+  },
+
+  "MapSvgControlList": {
+    "zoom": "Zoom"
+  },
+
+  "ErrorList": {
+    "ariaTranslationSet": "if translationSet is used, it must be an object where barList is an array and groupBy a string",
+    "calcFineGrainedStepDivision": ">100 divisions is too many for this to work well",
+    "calcHistogramBarGroupListGroupBy": "calcHistogramBarGroupList must have a string groupBy",
+    "calcHistogramBarGroupListPathogenesisStepList": "calcHistogramBarGroupList must have an array of at least one pathogenesis steps",
+    "calcInteractiveTimeBarArgs": "data to calcInteractiveGantt must be an array and current user choices must be strings",
+    "calcLeft": "calcLeft function requires a val",
+    "calcLeftScalePercFirstStep": "firstStep in calcLeftScalePerc must be a number",
+    "calcPercentage": "calcPercentage function requires a val",
+    "calcScalePercNumbers": "calcScalePerc in GanttScale requires both values to be numbers",
+    "calcScaleToFitUI": "calcScaleToFitUI requires scale argument with numeric properties stepDivision and totalSteps",
+    "calcScaleToFitUITooManySteps": "calcScaleToFitUI in UtilGanttScale cannot have more than 2000 as a totalSteps value",
+    "calcStepDiffGoodDiff": "lastStep must be equal to or greater than firstStep in calcStepDiff, GanttScale",
+    "calcStepDiffNumbers": "calcStepDiff in GanttScale requires both values to be numbers",
+    "calcWidth": "calcWidth function requires a min and max value provided",
+    "dragGraphLabelValProp": "The labelValList must be an array of [string, object] arrays",
+    "fnMustBeProvidedTo": "{{fnName}} must be provided to {{caller}} and must be a function",
+    "fnMustHaveNumbers": "{{caller}} must have numbers in all these parameters [{{numberKeyString}}]",
+    "fullStatBase": "fullStatBase needs a k",
+    "generalResponseTimeBarDataIsArray": "General stat list calc needs an array for data",
+    "histogramBarListTranslations": "the HistogramBarList must have either a translationSet with barList and groupBy text values or an i18nBaseOverride which redirects the components to those translations",
+    "hueTotalError": "calcHue must have a positive integer in the \"total\" property",
+    "isOrIsInArrayNeedsValues": "isOrIsInArray value error. {{missing}}",
+    "makeWidth": "makeWidth requires a min and max value provided",
+    "mapToGanttBars": "mapToGanttBars needs data with length and an i18nBase",
+    "noDragGraphData": "This drag graph config has zero results",
+    "noHistogramData": "This histogram config has zero results",
+    "numberPrecisionJustSingle": "numberPrecision expects a single number only, no arrays of numbers",
+    "secondaryNavProps": "all four args are required, currentPanel, k and i18nBase are all strings and setCurrentPanel should be a function",
+    "predictiveHistogramBarGroup": "Predictive histogram graph block list must be an array with positive count",
+    "sliderYear": "startYear must not be after endYear",
+    "sliderStepYear": "currentYear must be equal to of after startYear and equal to or before endYear",
+    "sortKeyError": "sortByKey function must have a string as a key",
+    "testError": "Test {{addToError}} {{alsoAddToError}}",
+    "theThingListLengthInvalid": "theThingList is not correct in {{callingFn}} - receiving: {{typeOf}} | {{val}}",
+    "theThingListLengthZero": "theThingList has length 0, there should be something in theThingList for {{callingFn}}",
+    "userChoiceStatMapper": "userChoiceStatMapper needs a string for currentResponse",
+    "utilKeyPairXYMakeMapFn": "makeMapFn needs both x and y to reference the correct keys in each point",
+    "writeHistogramBarListAriaLabel": "writeHistogramBarListAriaLabel requires histogramBarListLabel param"
+  },
+
+  "ReactTestLibrary": {
+    "key1": "Test the label",
+    "test-aPanelLabel": "Test Panel A",
+    "0": "0-5d",
+    "5": "5-10d",
+    "10": "10-15d",
+    "15": "15-20d",
+    "20": "20-25d",
+    "25": "25-30d",
+    "30": "over 30d",
+    "time": "Time",
+    "aOnly": "a",
+    "bOnly": "b"
+  },
+
+  "StoryBook": {
+    "secondaryNav": "Storybook secondary nav",
+    "secondaryNavSumAndFilterList": "Storybook secondary nav sum and filter list",
+    "test-aPanelLabel": "Test Panel A",
+    "test-bPanelLabel": "Test Panel B",
+    "test-cPanelLabel": "Test Panel C",
+    "test-dPanelLabel": "Test Panel D",
+    "test-ePanelLabel": "Test Panel E",
+    "aPanelLabel": "A",
+    "bPanelLabel": "B",
+    "cPanelLabel": "C",
+    "dPanelLabel": "D",
+    "ePanelLabel": "E"
+  }
+}

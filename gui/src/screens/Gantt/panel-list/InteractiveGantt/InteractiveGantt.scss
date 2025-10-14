@@ -1,0 +1,21 @@
+@import '../../../../util/Constant/sass-variable-list.scss';
+
+.interactive-gantt {
+  width: 100%;
+
+  &.interactive-gantt {
+    @include self-space-row-remove-border();
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+  &__bar-selector {
+    &.interactive-gantt__bar-selector {
+      @include self-space-row-remove-border();
+    }
+  }
+  .gantt-chart {
+    @include self-space-row-remove-border();
+  }
+}

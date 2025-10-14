@@ -1,0 +1,17 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.data-adjuster-button-list {
+  align-items: stretch;
+  font-size: $font-size--medium;
+  width: 40px;
+
+  &__button {
+    width:  100%;
+    white-space: nowrap;
+  }
+  &__label {
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.histogram {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &__caption {
+    display: block;
+    font-size: $font-size--large;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__columns {
+    position: absolute;
+    bottom: 10px;
+    top: $histogram-bar-group-height;
+  }
+
+  &__error-wrapper {
+    justify-content: center;
+  }
+}

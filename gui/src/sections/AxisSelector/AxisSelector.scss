@@ -1,0 +1,134 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+$axis-selector__base-width: 135px;
+$axis-selector__full-width: $axis-selector__base-width + $padding--medium;
+
+.axis-selector {
+  background-color: $white;
+  box-sizing: border-box;
+  padding-left: $padding--medium;
+  padding-right: $padding--medium;
+  position: relative;
+  width: $axis-selector__full-width;
+  z-index: $z-index--front-guaranteed;
+
+  &__heading {
+    box-shadow: none;
+    font-size: $font-size--large;
+    font-weight: bold;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__list {
+    height: 85vh;
+    overflow-x: scroll;
+  }
+
+  &__button {
+    white-space: nowrap;
+  }
+  &__break-line {
+    background-color: $blue--dark;
+    height: 1px;
+  }
+  &__primary {
+    &--left {
+      border-right: 24px solid $green;
+    }
+    &--right {
+      border-left: 24px solid $green;
+    }
+  }
+  &__open-button,
+  &__close-button {
+    position: absolute;
+    top: 0;
+    @media (min-width: $media-switch--large) {
+      display: none;
+    }
+  }
+
+  &__key-hint {
+    position: relative;
+  }
+
+
+  h3 {
+    font-size: $font-size--medium-large;
+  }
+
+
+  &.left {
+    border-right: 2px solid $green--dark;
+
+    .axis-selector__heading {
+      text-align: right;
+    }
+
+    .axis-selector__open-button {
+      left: $axis-selector__full-width;
+    }
+
+    .axis-selector__close-button {
+      right: -34px;
+    }
+
+    @media (max-width: $media-switch--large) {
+      left: 0 - $axis-selector__full-width;
+      transition: left 1s;
+    }
+
+    &.open {
+      @media (max-width: $media-switch--large) {
+        left: 0;
+      }
+    }
+  }
+
+  .left {
+    align-items: flex-end;
+  }
+
+  &.right {
+    align-items: flex-start;
+    border-left: 2px solid $green--dark;
+
+    .axis-selector__heading {
+      text-align: left;
+    }
+
+    .axis-selector__open-button {
+      right: $axis-selector__full-width;
+    }
+
+    .axis-selector__close-button {
+      left: -34px;
+    }
+
+    .axis-selector__key-hint {
+      right: -94px;
+    }
+
+    @media (max-width: $media-switch--large) {
+      right: 0 - $axis-selector__full-width;
+      transition: right 1s;
+    }
+
+    &.open {
+      @media (max-width: $media-switch--large) {
+        right: 0;
+      }
+    }
+  }
+
+  .right {
+    align-items: flex-start;
+  }
+
+
+
+  @media (max-width: $media-switch--large) {
+    position: absolute;
+  }
+}

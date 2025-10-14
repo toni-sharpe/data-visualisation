@@ -1,0 +1,93 @@
+@import '../../util/Constant/sass-variable-list.scss';
+
+.style-guide {
+  h4 {
+    & .main {
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+    & .details {
+      font-weight: var(--font-weight--light);
+    }
+  }
+
+  &__color-list {
+    flex-wrap: wrap;
+  }
+
+  &__color-block {
+    margin-bottom: var(--spacing--narrow);
+    width: 48px;
+    height: 48px;
+  }
+
+  &__font-list {
+    line-height: var(--line-height--large);
+
+    li {
+      align-self: flex-start;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h4,
+    h5 {
+      padding: var(--padding--tiniest) var(--padding--small);
+    }
+
+    h4 {
+      background-color: var(--blue--dark);
+      color: var(--white);
+    }
+
+    h5 {
+      background-color: var(--grey--very-light);
+      color: var(--black);
+    }
+  }
+
+  &__font {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  &__padding-and-spacing {
+    &--outer {
+      background-color: rgba($red--medium, 0.3);
+      box-shadow: 0 0 0 1px inset var(--blue--dark);
+      box-sizing: border-box;
+      width: 100px;
+      height: 100px;
+    }
+    &--inner {
+      background-color: rgba($red--medium, 0.6);
+      box-shadow: 0 0 0 1px inset var(--blue--dark);
+      height: 100%;
+    }
+  }
+
+  .z-index {
+    &__label {
+      padding: var(--padding--small-tiny) var(--padding--small);
+    }
+
+    &--outer {
+      background-color: var(--grey--lightest);
+      box-shadow: 0 0 0 1px inset var(--grey--light);
+      position: relative;
+      width: 300px;
+      height: 300px;
+      z-index: -9999;
+    }
+
+    &--inner {
+      background-color: $red--medium;
+      box-shadow: 0 0 5px 0 var(--black);
+      position: absolute;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
