@@ -11,14 +11,6 @@ function Background({ data }) {
     <SubPageWrapper rowLayout={false}>
       <div className='column-layout space-children--wide-column-with-border'>
         <HeadingAndTextPanel
-          heading={i18next.t(`${i18nBase}.heading1`)}
-          text={<>
-              <p>{i18next.t(`${i18nBase}.paragraph1`)}</p>
-              <p>{i18next.t(`${i18nBase}.paragraph7`)}</p>
-            </>
-          }
-        />
-        <HeadingAndTextPanel
           heading={i18next.t(`${i18nBase}.heading2`)}
           text={i18next.t(`${i18nBase}.paragraph2`)}
         />

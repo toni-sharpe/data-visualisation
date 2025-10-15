@@ -219,9 +219,6 @@ function MapSvg({
         setZoom={setZoom}
         zoom={zoom}
       />
-      <p className='map-svg__credit'>
-        Credit: the original SVG co-ordinates for this map were taken from the excellent project over at <a href='https://ourworldindata.org/'>Our World In Data</a>. [<a href='https://github.com/owid'>their GitHub</a>]
-      </p>
     </figure>
   )
 }

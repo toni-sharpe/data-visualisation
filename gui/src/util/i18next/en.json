@@ -89,10 +89,6 @@
   },
 
   "Background": {
-    "heading1": "Introduction",
-    "paragraph1": "This project grew out of previous work volunteering to help with some medical research, well prior to peer review, by taking the data and providing tools that could be used by the researcher to help build the case for or against the hypothesis. The spreadsheet provided became an SQL Database table and from there a front-end was built to provide specific visual descriptions of the data gathered, dictated by the direction of research; however, it became apparent that I could also use it beyond that to explore and improve several critical skills. Now completely separated from it's roots, this continues as a play area for me to explore ideas in the tech spaces I'd like to.",
-    "paragraph7": "Note: For ethical reasons the graphs involving medical data use deliberately generic terms.",
-
     "heading2": "Accessibility",
     "paragraph2": "I've been using the term \"accessibility as a first-class concern\" and for me this means that it is built into everything that's done on a website. It isn't necessary for a ticket to specifically mention it anymore than the need for JavaScript would be mentioned on a ticket in a React project. It's necessary by design because this is a website. The idea of \"first-class concern\" also elevates it above a group of secondary concerns, such as React: my site does not need React, it's just a very useful tool; it could be gone this time next year but it's critical the accessibility is not. This manifests itself across the whole project in a host of different ways, from understanding HTML deeply to the presence of it's own permanent column in the GitHub project.",
 
