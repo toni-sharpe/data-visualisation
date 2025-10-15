@@ -75,7 +75,7 @@ The [caching repo can be viewed here](https://github.com/toni-sharpe/data-visual
 
 ### Python backend
 
-Python and Flask create a backend for interface with the database and for some calculations using NumPy. This [repo can be found here](https://github.com/toni-sharpe/python-example)
+Python and Flask create a backend for interface with the database and for some calculations using NumPy. This [repo can be found here](https://github.com/toni-sharpe/python-example).
 
 ## CoPilot
 
