@@ -75,6 +75,8 @@ The [caching repo can be viewed here](https://github.com/toni-sharpe/data-visual
 
 ### Python backend
 
+Python and Flask create a backend for interface with the database and for some calculations using NumPy. This (repo can be found here)](https://github.com/toni-sharpe/python-example)
+
 ## CoPilot
 
 Was used against a now deleted repository. I was curious to know what it would suggest given the code and the context of the data representing a real-world medical problem. It got very close then published things as a PR that broke the ethical code I have imposed on the data, therefore the repo has been removed and replaced with this one.
